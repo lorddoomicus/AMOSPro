@@ -1,0 +1,12 @@
+echo "*** comptests *** "
+APSystem/APCmp comptests/Check_CLib.AMOS TYPE=0 WB NOERR NODEF
+APSystem/APCmp comptests/Get_Chunk.AMOS TYPE=0 WB NOERR NODEF
+APSystem/APCmp comptests/Library_Digest.AMOS TYPE=0 WB NOERR NODEF
+APSystem/APCmp comptests/Make_Labels.AMOS TYPE=0 WB NOERR NODEF
+APSystem/APCmp comptests/Make_Toktable.AMOS TYPE=0 WB NOERR NODEF
+
+delete >NIL: comptests/Check_CLib.info
+delete >NIL: comptests/Get_Chunk.info
+delete >NIL: comptests/Library_Digest.info
+delete >NIL: comptests/Make_labels.info
+delete >NIL: comptests/Make_Toktable.info

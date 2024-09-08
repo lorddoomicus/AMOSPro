@@ -1,0 +1,24 @@
+;
+; Installs the built version of AMOSPro on to a hard drive
+;
+; Set the Dest varible to whereever you wnat it installed
+;
+; (c) 2024 Derrik Walker v2.0
+; This is licensed for use under the MIT License
+;
+; 2024-09-07	dwalker		Initial Version
+
+set dest "work:"
+set AMOS ${dest}AMOS
+
+echo "Copy files to $dest"
+copy AMOS/ to $AMOS all lcone
+copy AMOS.info ${dest}AMOS.info
+ 
+echo "Copy files to LIBS:"
+Copy AMOS/APSystem/AMOS.library LIBS:AMOS.library
+
+echo "Copy files to s:"
+Copy AMOS/AMOSPro_Compiler_Config s:AMOSPro_Compiler_Config
+Copy AMOS/AMOSPro_Interpreter_Config s:AMOSPro_Interpreter_Config
+

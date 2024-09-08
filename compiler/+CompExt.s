@@ -55,8 +55,8 @@
 ;---------------------------------------------------------------------
  		Include	"+AMOS_Includes.s"
 		Include	"+Version.s"
-		Include	"+Compext_Size.s"
-		Include	"+Compext_Labels.s"
+		Include	"+CompExt_Size.s"
+		Include	"+CompExt_Labels.s"
 
 		INCDIR	"Work:Includes/i/"
 		Include "pp/powerpacker_lib.i"
@@ -1541,7 +1541,8 @@ bad_squash_mem:
 
 L2244E8	MOVE.L	-(A0),D0
 	EOR.L	D0,D5
-	MOVE.B	#$10,CCR
+	; MOVE.B	#$10,CCR ==> 2024-08-24 Fixed to build with Vasm 
+	MOVE.W	#$10,CCR
 	ROXR.L	#1,D0
 	RTS
 
@@ -1551,7 +1552,8 @@ L2244F8	LSR.L	#1,D0
 	BNE.S	L224506
 	MOVE.L	-(A0),D0
 	EOR.L	D0,D5
-	MOVE.B	#$10,CCR
+	; MOVE.B	#$10,CCR ==> 2024-08-24 Fixed to build with Vasm 
+	MOVE.W	#$10,CCR
 	ROXR.L	#1,D0
 L224506	ROXL.L	#1,D2
 	DBF	D1,L2244F8

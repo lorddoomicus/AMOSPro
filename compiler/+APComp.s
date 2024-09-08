@@ -11060,7 +11060,8 @@ AddPathCom
 .Lim1	move.b	(a1)+,d1
 	beq.s	.Lim2
 	cmp.b	#" ",d1
-	bne.	.Lim1
+	; bne.	.Lim1 ==> 2024-08-24 Fixed to build with Vasm	
+	bne.s	.Lim1
 .Lim2	move.b	-1(a1),d1
 	clr.b	-1(a1)
 	bsr	AddPath

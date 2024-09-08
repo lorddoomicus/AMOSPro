@@ -1,6 +1,0 @@
-echo "***Assembling compiler"
-execute compiler/acdata
-execute compiler/acomp
-execute compiler/aclib
-execute compiler/acompext
-execute compiler/aheader

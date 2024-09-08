@@ -49,7 +49,7 @@
 ;  THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ; ______________________________________________________________________________
 
-		Include	"+CLib_Size.S"
+		Include	"+CLib_Size.s"
 		Include "+AMOS_Includes.s"
 		Include "+Version.s"
 ; ______________________________________________________________________________
@@ -807,7 +807,8 @@ Tkl1a	move.b	(a0)+,d0		* ? PRINT / ? PRINT #
 	beq.s	Tkl1b
 	cmp.b	#"#",d0
 	beq.s	Tkl1c
-	cmp.s	#" ",d0
+	; cmp.s	#" ",d0 ==> 2024-08-24 Fixed to build with Vasm	
+	cmp.b	#" ",d0
 	beq.s	Tkl1a
 Tkl1b	move.w	#_TkPr,d4
 	bra	TkKt0
