@@ -68,9 +68,9 @@ The source files are all *+<file>.s*
 **Directory Structure**
 
 ```
-AMOSPro 			all the main source files are here as well as build scripts
-├── dist	 		Distribution directory where all the built files go
-├── bin 			Support files and scripts
+AMOSPro 		All the main source files are here as well as build scripts
+├── dist	 	Distribution directory where all the built files go
+├── bin 		Support files and scripts
 ├── compiler 		Compiler source files
 ├── comptests		Compiler test programs
 ├── extensions		Extension support files 
@@ -208,5 +208,5 @@ And finally, very special thanks to The Tech Rabbit for figuring some of this st
 
 Tech Rabbit can be found:
 
-https://www.youtube.com/@TheTechRabbit
+https://www.youtube.com/@TheTechRabbit \
 https://github.com/makeandbreak

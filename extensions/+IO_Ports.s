@@ -50,13 +50,13 @@ ExtNb		equ	6-1
 ;		AMIGA's includes
 ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		INCDIR		"includes/"
-		INCLUDE		"Exec/Types.I"
-		INCLUDE		"Exec/Exec.I"
-		INCLUDE 	"Devices/Serial.I"
-		INCLUDE		"Devices/PrtBase.I"
-		INCLUDE		"Devices/Printer.I"
-		INCLUDE		"Devices/PrtGfx.I"
-		INCLUDE		"Devices/Parallel.I"
+		INCLUDE		"exec/types.i"
+		INCLUDE		"exec/exec.i"
+		INCLUDE 	"devices/serial.i"
+		INCLUDE		"devices/prtbase.i"
+		INCLUDE		"devices/printer.i"
+		INCLUDE		"devices/prtgfx.i"
+		INCLUDE		"devices/parallel.i"
 
 ;---------------------------------------------------------------------
 ;		Include the files automatically calculated by
